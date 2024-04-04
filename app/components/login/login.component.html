@@ -1,0 +1,35 @@
+<!-- login.component.html -->
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <label for="userid">Userid:</label>
+      <input type="text" id="userid" (ngModel)="userid" name="userid" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" (ngModel)="password" name="password" required>
+  
+      <!-- <label for="usertype">User Type:</label>
+      <select id="usertype" (ngModel)="usertype" name="usertype" required> -->
+        <!-- <option value="customer">Customer</option>
+        <option value="admin">Admin</option>
+      </select> -->
+  
+      <button (click)="login()">Login</button>
+
+      
+    <!--<div id="button-container">
+      <a routerLink="/home" class="button" >Admin-Home</a>
+    </div>-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+       <p>login as admin <a routerLink="/home">Admin</a></p>
+       <p>Do not have an account  <a routerLink="/register">Register here</a></p>
+    </form>
+  </div>
+  
+

@@ -1,0 +1,34 @@
+<!-- payment.component.html -->
+
+<div class="payment-container">
+    <h2>Payment Details</h2>
+    <form>
+      <label for="paymentId">Payment ID:</label>
+      <input type="text" id="paymentId" (ngModel)="paymentId" name="paymentId" required >
+  
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" (ngModel)="amount" name="amount" required>
+  
+      <label for="method">Payment Method:</label>
+      <select id="method" (ngModel)="method" name="method" required>
+        <option value="credit_card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank_transfer">Bank Transfer</option>
+      </select>
+  
+      <label for="date">Payment Date:</label>
+      <input type="date" id="date" (ngModel)="date" name="date" required>
+  
+      <label for="status">Payment Status:</label>
+      <select id="status" (ngModel)="status" name="status" required>
+        <option value="success">Success</option>
+        <option value="pending">Pending</option>
+        <option value="failed">Failed</option>
+      </select>
+  
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+  
+
+

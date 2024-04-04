@@ -1,0 +1,32 @@
+<!-- registration.component.html -->
+<body>
+  <br><br><br><br><br><br>
+<div class="registration-container">
+    <h2>Registration Form</h2>
+    <form (ngSubmit)="register()">
+      <label for="id">ID:</label>
+      <input type="text" id="id" (ngModel)="id" name="id" required>
+  
+      <label for="name">Name:</label>
+      <input type="text" id="name" (ngModel)="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" (ngModel)="email" name="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" (ngModel)="password" name="password" required>
+  
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" (ngModel)="phoneNumber" name="phoneNumber" required>
+  
+      <label for="address">Address:</label>
+      <textarea id="address" (ngModel)="address" name="address" required></textarea>
+  
+      <button type="submit">Register</button>
+      <button type="button" (click)="save()">Save</button>
+      <a routerLink="/login">Go to Login Page</a>
+    </form>
+  </div>
+</body>
+
+

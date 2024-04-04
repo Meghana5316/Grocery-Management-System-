@@ -1,0 +1,13 @@
+<!-- admin-home.component.html -->
+
+<div class="background-container">
+    <h2>Admin</h2>
+    <ul>
+      <li *ngFor="let item of groceryItems">
+        {{ item.name }} - {{ item.price }} - {{ item.unit }}
+        <button click="editItem(item.id)">Edit</button>
+        <button click="deleteItem(item.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

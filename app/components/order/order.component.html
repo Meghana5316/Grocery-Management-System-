@@ -1,0 +1,37 @@
+<!-- order.component.html -->
+
+<div class="order-container">
+    <h2>Order Details</h2>
+    <form>
+      <label for="orderId">Order ID:</label>
+      <input type="text" id="orderId" (ngModel)="orderId" name="orderId" required >
+  
+      <label for="customerId">Customer ID:</label>
+      <input type="text" id="customerId" (ngModel)="customerId" name="customerId" required>
+  
+      <label for="orderDate">Order Date:</label>
+      <input type="date" id="orderDate" (ngModel)="orderDate" name="orderDate" required>
+  
+      <label for="numberOfItems">Number of Items:</label>
+      <input type="number" id="numberOfItems" (ngModel)="numberOfItems" name="numberOfItems" required>
+  
+      <label for="totalAmount">Total Amount:</label>
+      <input type="text" id="totalAmount" (ngModel)="totalAmount" name="totalAmount" required>
+  
+      <label for="status">Status:</label>
+      <select id="status" (ngModel)="status" name="status" required>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+        <option value="cancelled">Cancelled</option>
+      </select>
+  
+      <label for="transactionId">Transaction ID:</label>
+      <input type="text" id="transactionId" (ngModel)="transactionId" name="transactionId" required>
+  
+      <button  (click)="gotoPayment()">Go to Payment</button>
+      <p>go to payment <a routerLink="/payment">here</a></p>
+
+    </form>
+  </div>
+  
+
